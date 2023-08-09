@@ -36,9 +36,8 @@ function getWinner(computerChoice, playerChoice) {
         return playerChoice === 3 ? win : lose;
     } else if (computerChoice === 3) {
         return playerChoice === 1 ? win : lose;
-    } else {
-        alert("Ops! Something has gone wrong!");
     }
+    throw new Error("an error has occurred");
 }
 
 // Tally the score - a game will have five rounds
