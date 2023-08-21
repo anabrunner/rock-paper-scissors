@@ -4,19 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <style>
+        #restart {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
     <header>Rock Paper Scissors</header>
+    
     <p>You, the computer, and a playground classic. Who will win?</p>
+    
     <h2>Choose your weapon</h2>
-    <button>Rock</button>
-    <button>Paper</button>
-    <button>Scissors</button>
-    <p>Round: </p>
-    <p>Your score: </p>
-    <p>Computer score: </p>
+
+    <div class="buttons">
+        <button id="rock">Rock</button>
+        <button id="paper">Paper</button>
+        <button id="scissors">Scissors</button>
+    </div>
+    
+    <div class="scores">
+        <p>Rounds Played</p>
+        <p id="roundNumber">0</p>
+        <p>You</p>
+        <p id="playerScore">0</p>
+        <p>Computer</p>
+        <p id="computerScore">0</p>
+    </div>
+
+    <p id="results"></p>
+    <p id="finalResults"></p>
+
+    <button id="restart">Play again</button>
 
     <footer>This battle was brought to you by anabrunner</footer>
 </body>
