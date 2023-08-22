@@ -3,13 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>Rock Paper Scissors</title>
     <script src="script.js" defer></script>
-    <style>
-        #restart {
-            display: none;
-        }
-    </style>
 </head>
 
 <body>
@@ -25,13 +22,20 @@
         <button id="scissors">Scissors</button>
     </div>
     
-    <div class="scores">
+    <div class="rounds">
         <p>Rounds Played</p>
         <p id="roundNumber">0</p>
-        <p>You</p>
-        <p id="playerScore">0</p>
-        <p>Computer</p>
-        <p id="computerScore">0</p>
+    </div>
+
+    <div class="scoreBox">
+        <div class="score">
+            <p>You</p>
+            <p id="playerScore">0</p>
+        </div>
+        <div class="score">
+            <p>Computer</p>
+            <p id="computerScore">0</p>
+        </div>
     </div>
 
     <p id="results"></p>
@@ -39,6 +43,6 @@
 
     <button id="restart">Play again</button>
 
-    <footer>This battle was brought to you by anabrunner</footer>
+    <footer>This battle was brought to you by&nbsp;<a href="https://github.com/anabrunner" target="_blank">anabrunner</a>&nbsp;<a href="https://github.com/anabrunner" target="_blank"><img src="img/github-mark.png" alt="GitHub logo"></a></footer>
 </body>
 </html>

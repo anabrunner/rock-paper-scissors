@@ -1,0 +1,50 @@
+/* CSS for Rock Paper Scissors game */
+
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+
+html {
+  font-family: 'Barriecito', cursive;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  font-size: 60rem;
+}
+
+.rounds {
+  display: flex;
+  gap: 20px;
+}
+
+.scoreBox {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.score {
+  display: flex;
+  gap: 20px;
+}
+
+#restart {
+  display: none;
+}
+
+footer {
+  display: flex;
+  text-align: center;
+  padding: 20px;
+}
+
+footer img:hover {
+  transform: rotate(360deg);
+  transition: 1s;
+}
