@@ -25,10 +25,10 @@ function getComputerSelection() {
 function playRound() {
     let playerChoice = this.id;
     let computerChoice = getComputerSelection();
-    let roundNumber = parseInt(document.getElementById("roundNumber").innerText);
+    let roundNumber = parseInt(document.getElementById("roundNumber").innerText) + 1;
     checkWinner(playerChoice, computerChoice);
-    document.getElementById("roundNumber").textContent = roundNumber + 1;
-    checkGameEnd(roundNumber, playerScore, computerScore);
+    document.getElementById("roundNumber").textContent = roundNumber;
+    checkGameEnd(roundNumber);
     return;
 }
 
@@ -52,7 +52,9 @@ function checkWinner(playerChoice, computerChoice) {
 }
 
 //Checks if game has completed five rounds.
-function checkGameEnd(roundNumber, playerScore, computerScore) {
+function checkGameEnd(roundNumber) {
+    let playerScore = parseInt(document.getElementById("playerScore").innerText);
+    let computerScore = parseInt(document.getElementById("computerScore").innerText);
     if (roundNumber < 5) {
         return;
     } else {
