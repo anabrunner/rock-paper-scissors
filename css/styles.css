@@ -1,9 +1,9 @@
 /* CSS for Rock Paper Scissors game */
 
-@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Shadows+Into+Light&display=swap');
 
 html {
-  font-family: 'Barriecito', cursive;
+  font-family: 'Shadows Into Light', cursive;
 }
 
 body {
@@ -16,6 +16,7 @@ body {
 
 header {
   font-size: 60rem;
+  font-family: 'Barriecito', cursive;
   text-align: center;
   padding: 20px;
 }
@@ -27,6 +28,7 @@ p {
 
 h2 {
   padding: 20px;
+  font-family: 'Barriecito', cursive;
 }
 
 .buttons {
@@ -39,6 +41,9 @@ h2 {
 .buttons button {
   width: 200px;
   height: 200px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px gray;
 }
 
 .rounds {
@@ -57,12 +62,22 @@ h2 {
   gap: 20px;
 }
 
+#results {
+  font-weight: bold;
+  font-family: 'Barriecito', cursive;
+}
+
 #restart {
   display: none;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px gray;
+  font-family: 'Barriecito', cursive;
+  font-size: 18rem;
 }
 
 footer {
-  display: flex;
   text-align: center;
   padding: 20px;
 }
