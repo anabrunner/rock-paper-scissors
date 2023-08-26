@@ -16,6 +16,29 @@ body {
 
 header {
   font-size: 60rem;
+  text-align: center;
+  padding: 20px;
+}
+
+p {
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  padding: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-flow: wrap;
+}
+
+.buttons button {
+  width: 200px;
+  height: 200px;
 }
 
 .rounds {
